@@ -113,8 +113,9 @@ header nav ul{
     transform: rotate(0deg);
 }
 .slider .list .item img{
-    width: 90%;
+    width: 100%;
     filter: drop-shadow(0 0 20px #000);
+    border-radius: 90px;
 }
 .slider .content{
     position: absolute;
@@ -157,7 +158,7 @@ header nav ul{
     border-radius: 20px;
     padding: 10px 20px;
 }
-#prev,
+
 #next{
     position: absolute;
     top: 50%;
@@ -176,9 +177,25 @@ header nav ul{
 }
 #prev{
     left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #eee9;
+    background-color: #eee5;
+    color: #eee;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 15;
+    
 }
 #next{
     right: 20px;
+
 }
 
 /* //circle */
